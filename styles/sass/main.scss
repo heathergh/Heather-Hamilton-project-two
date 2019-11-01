@@ -4,6 +4,13 @@
 
 @include mq-mobile {}
 
-@include mq-tablet {}
+@include mq-tablet {
+    .section__unordered-list-image-gallery-3 {
+        li {
+            list-style: none;
+            width: calc(100% / 3);
+        }
+    }
+}
 
 @include mq-desktop {}
