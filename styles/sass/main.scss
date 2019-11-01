@@ -1,8 +1,9 @@
 @import 'header';
-    
+@import 'mixins';
+@import 'global'; 
 
-nav, footer {
-    font-family: 'Pompiere', cursive;
-}
+@include mq-mobile {}
 
-h1, h2, h3, h4, h5 font-family: 'Lato', sans-serif;
+@include mq-tablet {}
+
+@include mq-desktop {}

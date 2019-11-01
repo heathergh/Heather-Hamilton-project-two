@@ -1,0 +1,92 @@
+@import 'mixins';
+$pale-mauve: #FAE5FF;
+$white: #ffffff;
+$brown-red: #882C07;
+$orange: #FE6F19;
+$black: #0D0D0D;
+$plum-purple: #4C0341;
+
+@include mq-mobile {
+    html {
+        font-size: 125%;
+    }
+    h1, h2, h3, h4, h5 {
+        font-family: 'Pompiere', cursive;
+        text-transform: uppercase;
+    }
+    section {
+        padding: 20px;
+    }
+    a {
+        padding: 10px 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .header__anchor_current {
+        background: $pale-mauve;
+        color: $white;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    nav, a, footer, p {
+        font-family: 'Lato', sans-serif;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    body, [class*="background-pale-mauve"] {
+        background: $pale-mauve;
+    }
+    .fas {
+        border-radius: 50%;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+    }
+    .fas::before {
+        left: 6px;
+        position: relative;
+        top: 8px;
+    }
+    [class*="color-pale-mauve"] {
+        color: $pale-mauve;
+    }
+    [class*="color-white"] {
+        color: $white;
+    }
+    [class*="background-white"] {
+        background: $white;
+    }
+    [class*="background-brown-red"] {
+        background: $brown-red;
+    }
+    [class*="color-brown-red"] {
+        color: $brown-red;
+    }
+    [class*="border-color-orange"],
+    [class*="border-bottom-color-orange"] {
+        border-color: $orange;
+    }
+
+    [class*="color-plum-purple"] {
+        color: $plum-purple;
+    }
+    [class*="background-plum-purple"] {
+        background: $plum-purple;
+    }
+
+}
+
+@include mq-tablet {
+
+}
+
+@include mq-desktop {
+    
+}
