@@ -1,0 +1,5 @@
+header {
+    background-image: url(../assets/home-box-header.png);
+    background-size: cover;
+    height: 50vh;
+}
