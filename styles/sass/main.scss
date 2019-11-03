@@ -1,16 +1,62 @@
-@import 'header';
-@import 'mixins';
+@import 'normalize';
 @import 'global'; 
+@import 'mixins';
+@import 'header';
+@import 'contact';
 
-@include mq-mobile {}
+@include mq-mobile {
+    section, div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section {
+        .fas {
+            display: none;
+        }
+    }
+    h4 {
+        font-size: 1.5rem;
+    }  
+    .section__unordered-list-image-gallery-3 {
+        list-style: none;
+        li {
+            padding: 10px 0;
+        }
+    }
+    footer {
+        align-items: center;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        p {
+            margin: 0;
+        }
+    }
+}
 
 @include mq-tablet {
     .section__unordered-list-image-gallery-3 {
         li {
-            list-style: none;
             width: calc(100% / 3);
         }
     }
+    section {
+        .fas {
+            border-radius: 50%;
+            display: inline-block;
+            height: 30px;
+            position: absolute;
+            width: 30px;
+        }
+        .fas::before {
+            left: 6px;
+            position: relative;
+            top: 8px;
+        }
+    }
+    
 }
 
 @include mq-desktop {}
