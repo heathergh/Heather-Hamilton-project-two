@@ -2,15 +2,24 @@
 @import 'global'; 
 @import 'header';
 @import 'contact';
+@import 'blog';
 
 @include mq-mobile {
-    .body__main-position-content-center {
-        section, div {
+    // .body__main-position-content-center {
+    //     section, div {
+    //         align-items: center;
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //     }
+    // }
+    [class*="position-content-center"] {
+        // section, div {
             align-items: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
+        // }
     }
     section {
         .fas {

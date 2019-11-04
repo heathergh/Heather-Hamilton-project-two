@@ -18,7 +18,7 @@
         font-size: 1.5rem;
         padding-top: 30px;
     }
-    section {
+    [class*="padding-twenty"] {
         padding: 20px;
     }
     a {
@@ -84,6 +84,9 @@
     [class*="no-margin"] {
         margin: 0;
     }
+    .div__paragraph-padding-top-bottom-twenty {
+        padding: 0 20px;
+    }
     .visuallyHidden {
         &:not(:focus),
         &:not(:active) { 
@@ -101,6 +104,9 @@
 }
 
 @include mq-tablet {
+    html {
+        font-size: 100%;
+    }
 }
 
 @include mq-desktop {

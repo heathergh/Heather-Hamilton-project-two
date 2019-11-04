@@ -1,0 +1,15 @@
+@import 'mixins';
+
+@include mq-mobile {
+    ul.div__unordered-list-initial-styling {
+        list-style: disc;
+        margin: 20px 0;
+        padding-left: 40px;
+    }
+}
+@include mq-tablet {
+
+}
+@include mq-desktop {
+    
+}

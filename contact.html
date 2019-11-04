@@ -10,7 +10,7 @@
         <title>Shoe Kloset | Contact</title>
     </head>
 
-    <body>
+    <body class="contact">
         <header class="body__heading-background-image body__heading-background-image-contact">
             <nav>
                 <h5>Shoe Kloset</h5>
@@ -21,17 +21,19 @@
                     <li><a href="/contact.html" class="header__anchor-current" target="_blank" aria-label="Navigate to Shoe Kloset's Contact Page">Contact</a></li>
                 </ul>
             </nav>
-            <h1>get in touch</h1>
+            <h1>GET IN TOUCH</h1>
         </header>
 
         <main class="body__main-background-pale-mauve">
-            <section>
+            <section class="main__section-padding-twenty">
                 <div class="section__div-form-wrapper div__form-background-white">
                     <form action="post" class="div__form-pseudo-element-orange">
-                        <label for="name" class="visuallyHidden">Name</label>
-                        <input class="form__input-border-bottom-color-orange" type="text" id="first-name" placeholder="Name">
-                        <label for="email" class="visuallyHidden">Email address</label>
-                        <input class="form__input-border-bottom-color-orange" type="email" id="email" placeholder="Email Address">
+                        <div class="form--div-input-wrapper">
+                            <label for="name" class="visuallyHidden">Name</label>
+                            <input class="form__input-border-bottom-color-orange" type="text" id="first-name" placeholder="Name">
+                            <label for="email" class="visuallyHidden">Email address</label>
+                            <input class="form__input-border-bottom-color-orange" type="email" id="email" placeholder="Email Address">
+                        </div>
                         <label for="message" class="visuallyHidden">Message</label>
                         <textarea class="form__input-border-color-orange" type="textarea" id="message">Message</textarea>
                         <button type="submit" class="form__button-background-brown-red">Submit</button>
@@ -54,11 +56,13 @@
                             </li>
                         </ul>
                     </nav>
-                    <p class="div__paragraph-color-black div__paragraph-no-margin">info@email.com</p>
-                    <p class="div__paragraph-color-black div__paragraph-no-margin">123 - 456 - 7890</p>
-                    <p class="div__paragraph-color-black div__paragraph-no-margin">123 Queen Street West, Unit 10</p>
-                    <p class="div__paragraph-color-black div__paragraph-no-margin">Toronto, Ontario</p>
-                    <p class="div__paragraph-color-black div__paragraph-no-margin">M5V2D5</p>
+                    <address>
+                        <p class="div__paragraph-color-black div__paragraph-no-margin">info@email.com</p>
+                        <p class="div__paragraph-color-black div__paragraph-no-margin">123 - 456 - 7890</p>
+                        <p class="div__paragraph-color-black div__paragraph-no-margin">123 Queen Street West, Unit 10</p>
+                        <p class="div__paragraph-color-black div__paragraph-no-margin">Toronto, Ontario</p>
+                        <p class="div__paragraph-color-black div__paragraph-no-margin">M5V2D5</p>
+                    </address>
                 </div>
             </section>
         </main>
