@@ -6,6 +6,7 @@
     .nav__unordered-list-social-media-link-wrapper {
         display: flex;
         justify-content: space-between;
+        margin: 10px 0;
         a {
             padding: 0;
             &:hover {
@@ -15,15 +16,40 @@
             }
         }
     }
-    form {
+    .section__div-form-wrapper > form, .form--div-input-wrapper {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        max-width: 600px;
-        input {
+    }
+    .section__div-form-wrapper {
+        input, textarea {
             margin: 5px 0;
+        }
+        input {
+            border-left: none;
+            border-right: none;;
+            border-top: none;
+        }
+        button[type="submit"] {
+            border: none;
+            box-shadow: none;
+            width: 212px;
+        }
+    }
+    .section__div-form-wrapper > form {
+        padding: 20px 0;
+    }
+    section > div {
+        margin: 20px 0;
+    }
+    .section__div-text-wrapper {
+        address {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            p {
+                white-space: nowrap;
+            }
         }
     }
 
