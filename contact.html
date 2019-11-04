@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +15,10 @@
             <nav>
                 <h5>Shoe Kloset</h5>
                 <ul>
-                    <li><a href="/index.html" lass="header__anchor-color-black">Home</a></li>
-                    <li><a href="#" lass="header__anchor-color-black">About</a></li>
-                    <li><a href="Blog" lass="header__anchor-color-black">Blog</a></li>
-                    <li><a href="/contact.html" class="header__anchor-current">Contact</a></li>
+                    <li><a href="/index.html" class="header__anchor-color-black" target="_blank" aria-label="Navigate to Shoe Kloset's Homepage">Home</a></li>
+                    <li><a href="#" class="header__anchor-color-black" target="_blank" aria-label="Navigate to Shoe Kloset's About Page">About</a></li>
+                    <li><a href="/blog" class="header__anchor-color-black" target="_blank" aria-label="Navigate to Shoe Kloset's Blog">Blog</a></li>
+                    <li><a href="/contact.html" class="header__anchor-current" target="_blank" aria-label="Navigate to Shoe Kloset's Contact Page">Contact</a></li>
                 </ul>
             </nav>
             <h1>get in touch</h1>
@@ -27,33 +26,39 @@
 
         <main class="body__main-background-pale-mauve">
             <section>
-                <div class="section__div-form-wrapper">
+                <div class="section__div-form-wrapper div__form-background-white">
                     <form action="post" class="div__form-pseudo-element-orange">
-                        <label for="name">Name</label>
-                        <input class="form__input-border-bottom-color-orange" type="text" id="first-name"
-                            placeholder="Name">
-                        <label for="email">Email address</label>
-                        <input class="form__input-border-bottom-color-orange" type="email" id="email"
-                            placeholder="Email Address">
-                        <label for="message">Message</label>
-                        <input class="form__input-border-color-orange" type="textarea" id="message">
-                        <button type="submit">Submit</button>
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input class="form__input-border-bottom-color-orange" type="text" id="first-name" placeholder="Name">
+                        <label for="email" class="visuallyHidden">Email address</label>
+                        <input class="form__input-border-bottom-color-orange" type="email" id="email" placeholder="Email Address">
+                        <label for="message" class="visuallyHidden">Message</label>
+                        <textarea class="form__input-border-color-orange" type="textarea" id="message">Message</textarea>
+                        <button type="submit" class="form__button-background-brown-red">Submit</button>
                     </form>
                 </div>
                 <div class="section__div-text-wrapper">
                     <nav>
                         <ul class="nav__unordered-list-social-media-link-wrapper">
-                            <li><a class="nav__anchor-color-plum-purple fab fa-facebook-f" href="#"></a></li>
-                            <li><a class="nav__anchor-color-plum-purple fab fa-instagram" href="#"></a></li>
-                            <li><a class="nav__anchor-color-plum-purple fab fa-twitter" href="#"></a></li>
-                            <li><a class="nav__anchor-color-plum-purple fa fa-whatsapp" href="#"></a></li>
+                            <li>
+                                <a class="nav__anchor-color-plum-purple fab fa-facebook-f" href="#" aria-label="Shoe Kloset's Facebook Page"></a>
+                            </li>
+                            <li>
+                                <a class="nav__anchor-color-plum-purple fab fa-instagram" href="#" aria-label="Shoe Kloset's Instagram Page"></a>
+                            </li>
+                            <li>
+                                <a class="nav__anchor-color-plum-purple fab fa-twitter" href="#" aria-label="Shoe Kloset's Twitter Account"></a>
+                            </li>
+                            <li>
+                                <a class="nav__anchor-color-plum-purple fab fa-whatsapp" href="#" aria-label="Shoe Kloset's WhatsApp Account"></a>
+                            </li>
                         </ul>
                     </nav>
-                    <p class="div__paragraph-color-black">info@email.com</p>
-                    <p class="div__paragraph-color-black">123 - 456 - 7890</p>
-                    <p class="div__paragraph-color-black">123 Queen Street West, Unit 10</p>
-                    <p class="div__paragraph-color-black">Toronto, Ontario</p>
-                    <p class="div__paragraph-color-black">M5V2D5</p>
+                    <p class="div__paragraph-color-black div__paragraph-no-margin">info@email.com</p>
+                    <p class="div__paragraph-color-black div__paragraph-no-margin">123 - 456 - 7890</p>
+                    <p class="div__paragraph-color-black div__paragraph-no-margin">123 Queen Street West, Unit 10</p>
+                    <p class="div__paragraph-color-black div__paragraph-no-margin">Toronto, Ontario</p>
+                    <p class="div__paragraph-color-black div__paragraph-no-margin">M5V2D5</p>
                 </div>
             </section>
         </main>
@@ -61,5 +66,4 @@
             <p class="footer__paragraph-color-white">Copyright © 2019 Juno College</p>
         </footer>
     </body>
-
 </html>

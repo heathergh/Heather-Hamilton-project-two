@@ -1,6 +1,5 @@
 @import 'normalize';
 @import 'global'; 
-@import 'mixins';
 @import 'header';
 @import 'contact';
 
@@ -20,7 +19,6 @@
         font-size: 1.5rem;
     }  
     .section__unordered-list-image-gallery-3 {
-        list-style: none;
         li {
             padding: 10px 0;
         }

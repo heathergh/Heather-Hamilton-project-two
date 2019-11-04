@@ -1,0 +1,43 @@
+@import 'colour_palette';
+@import 'mixins';
+
+
+@include mq-mobile {
+    .nav__unordered-list-social-media-link-wrapper {
+        display: flex;
+        justify-content: space-between;
+        a {
+            padding: 0;
+            &:hover {
+                font-weight: 700;
+                line-height: 1.5rem;
+                text-decoration: none;
+            }
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        max-width: 600px;
+        input {
+            margin: 5px 0;
+
+        }
+    }
+
+}
+@include  mq-tablet {
+    form {
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+}
+@include  mq-desktop {
+    
+}
