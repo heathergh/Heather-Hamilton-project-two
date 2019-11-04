@@ -655,7 +655,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media (min-width: 320px) {
-  section, div {
+  .body__main-position-content-center section, .body__main-position-content-center div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

@@ -4,11 +4,13 @@
 @import 'contact';
 
 @include mq-mobile {
-    section, div {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .body__main-position-content-center {
+        section, div {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     section {
         .fas {
@@ -54,7 +56,6 @@
             top: 8px;
         }
     }
-    
 }
 
 @include mq-desktop {}
