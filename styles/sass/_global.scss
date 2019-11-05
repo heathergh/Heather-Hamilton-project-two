@@ -8,6 +8,7 @@
     }
     h1, h2, h3, h4, h5 {
         font-family: 'Pompiere', cursive;
+        color: $black;
         margin: 0;
         padding: 0;
     }
@@ -18,8 +19,8 @@
         font-size: 1.5rem;
         padding-top: 30px;
     }
-    [class*="padding-twenty"] {
-        padding: 20px;
+    h5 {
+        text-align: left;
     }
     a {
         padding: 10px 20px;
@@ -34,16 +35,18 @@
         margin: 0;
         padding: 0;
     }
-    .header__anchor-current {
-        background: $plum-purple;
-        color: $white;
-    }
     nav, a, footer, p {
         font-family: 'Lato', sans-serif;
     }
     img {
         display: block;
         max-width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+    [class*="padding-twenty"] {
+        padding: 20px;
     }
     [class*="font-weight-bold"] {
         font-weight: 700;
@@ -57,7 +60,9 @@
     [class*="color-white"] {
         color: $white;
     }
-    [class*="color-black"] {
+    [class*="color-black"], 
+    [class*="color-black"]:active,
+    [class*="color-black"]:focus {
         color: $black;
     }
     [class*="background-white"] {
@@ -84,8 +89,17 @@
     [class*="no-margin"] {
         margin: 0;
     }
-    .div__paragraph-padding-top-bottom-twenty {
+    [class*="padding-left-right-bottom-twenty"] {
+        padding: 0 20px 20px 20px;
+    }
+    [class*="padding-left-right-twenty"] {
         padding: 0 20px;
+    }
+    [class*="text-align-center"] {
+        text-align: center;
+    }
+    [class*="whitespace-nowrap"] {
+        white-space: nowrap;
     }
     .visuallyHidden {
         &:not(:focus),
@@ -105,7 +119,13 @@
 
 @include mq-tablet {
     html {
-        font-size: 100%;
+        font-size: 150%;
+    }
+
+    [class*=box-shadow-orange] {
+        -moz-box-shadow:    -20px 20px 0 $orange;
+        -webkit-box-shadow: -20px 20px 0 $orange;
+        box-shadow:         -20px 20px 0 $orange;
     }
 }
 

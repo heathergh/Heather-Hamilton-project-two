@@ -3,42 +3,70 @@
 
 @include mq-mobile {
     header {
-        background-image: url("../assets/header-image.jpg");
         background-repeat: no-repeat;        
         background-size: cover;
         background-position: center;
         padding: 10px 20px;
+        &.body__heading-background-image-home {
+            background-image: url("../assets/home-header.jpg"); 
+        }
+        &.body__heading-background-image-blog {
+            background-image: url("../assets/blog-header.jpg"); 
+
+        }
+        &.body__heading-background-image-contact {
+            background-image: url("../assets/contact-header.jpg"); 
+
+        }
         h1 {
             width: 40%;
             max-width: 44%;
-            line-height: 1.35rem;
         }
         h5 {
             width: 24%;
         }
         a {
-            padding: 0 5px;
+            padding: 0;
         }
         nav {
-            align-content: space-between;
+            // align-content: space-between;
             display: flex;
             justify-content: space-between;
             text-align: right;
-            li:first-of-type {
-                line-height: 32px;
-            }
+        }
+        .header__anchor-current {
+            background: $plum-purple;
+            color: $white;
+            line-height: 32px;
+            padding: 0 5px;
         }
     }
 }
 
 @include mq-tablet {
     header {
-        nav {
-            display: block;
-            li:first-of-type {
-                line-height: initial;
-                margin: 0 20px;
+        background-position: right;
+        height: 40vh;
+        padding: 40px 80px;
+        ul {
+            display: flex;
+            li {
+                margin-left: 15px;
             }
+        }
+        h1 {
+            padding-top: 50px;
+            width: 15%;
+        }
+        h5 {
+            width: 8%;
+        }
+        a {
+            font-size: 0.5rem;
+        }
+        .header__anchor-current {
+            line-height: normal;
+            padding: 2px 8px;
         }
     }
 }
