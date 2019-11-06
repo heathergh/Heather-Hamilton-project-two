@@ -8,16 +8,19 @@
         background-position: center;
         padding: 10px 20px;
         &.body__heading-background-image-home {
-            height: 50vh;
             background-image: url("../assets/home-header.jpg"); 
+            height: 50vh;
+            max-height: 380px;
         }
         &.body__heading-background-image-blog {
-            height: 50vh;
             background-image: url("../assets/blog-header.jpg"); 
+            height: 40vh;
+            max-height: 200px;
         }
         &.body__heading-background-image-contact {
-            height: 50vh;
             background-image: url("../assets/contact-header.jpg"); 
+            height: 40vh;
+            max-height: 200px;
         }
         h1 {
             width: 125px;
@@ -34,6 +37,9 @@
         nav {
             display: flex;
             justify-content: space-between;
+            ul {
+                text-align: right;
+            }
         }
         .header__anchor-current {
             background: $plum-purple;

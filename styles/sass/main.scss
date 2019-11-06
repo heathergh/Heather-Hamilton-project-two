@@ -26,30 +26,54 @@
         .fas {
             border-radius: 50%;
             display: inline-block;
-            height: 30px;
+            height: 25px;
             position: absolute;
-            width: 30px;
+            width: 25px;
+            &::before {
+                font-size: 0.74rem;
+                position: relative;
+                top: 1px;
+            }
         }
-        .fas::before {
-            left: 6px;
-            position: relative;
-            top: 8px;
+        .fa-location-arrow {
+            &::before {
+                left: 4px;
+            }
+        }
+        .fa-users {
+            &::before {
+                left: 3px;
+            }
+        }
+        .fa-file {
+            &::before {
+                left: 7px;
+            }
+        }
+        .fa-phone {
+            &::before {
+                left: 5px;
+            }
         }
     }
     .section__div-image-wrapper {
-        width: calc(50% - 20px);
+        width: 100%;
         .div__image-position-absolute-right {
-            top: 25%;
+            top: 15%;
             position: absolute;
             right: 0;
         }
     }
+    .section__div-image-wrapper-width-forty-percent {
+        width: 40%;
+    }
     .div__image-width-half {
+        max-width: 350px;
         width: 50%;
     }
     .section__unordered-list-image-gallery-3 {
         li {
-            width: calc(100% / 3);
+            width: calc((100% - 40px) / 3);
         }
     }
     [class*="position-content"] {
@@ -58,16 +82,36 @@
         flex-direction: column;
         justify-content: center;
     }
-    .div__image-transform-zero-negative-twenty {
-        transform: translate(0, -20px);
+    .div__image-transform-zero-negative-forty {
+        transform: translate(0, -40px);
     }
-    .div__image-transform-negative-twenty-zero {
-        transform: translate(0, -20px);
+    .div__image-transform-zero-twenty {
+        transform: translate(0, 20px);
     }
-    .section__div-position-right {
-        width: calc(50% - 40px);
+    [class*="align-items-flex-end"] {
+        align-items: flex-end;
     }
-
+    [class*="position-half"] {
+        padding: 20px 60px;
+        width: calc(40% - 60px);
+    }
+    .div__section-div-column-left,
+    .div__section-div-column-right {
+        margin-top: 20px;
+    }
+    .div__div-text-wrapper {
+        margin-left: 60px;
+        padding-top: 30px;
+    }
 }
 
-@include mq-desktop {}
+@include mq-desktop {
+    .div__image-max-height {
+        max-height: 350px;
+        object-fit: cover;
+    }
+    .main__section-flex-quadrant {
+        justify-content: center;
+        align-items: center;
+    }
+}

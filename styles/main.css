@@ -389,7 +389,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   img {
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
   [class*="font-weight-bold"] {
     font-weight: 700;
@@ -447,11 +447,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   [class*="padding-left-right-twenty"] {
     padding: 0 20px;
   }
+  [class*="padding-left-forty"] {
+    padding-left: 40px;
+  }
   [class*="text-align-center"] {
     text-align: center;
   }
-  sp
-[class*="text-align-left"] {
+  [class*="text-align-left"] {
     text-align: left;
   }
   [class*="text-align-right"] {
@@ -473,7 +475,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  [class*="flex-column"] {
+  [class*="flex-column"],
+  .main__section-flex-quadrant {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -495,12 +498,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     min-width: 212px;
   }
   .visuallyHidden:not(:focus), .visuallyHidden:not(:active) {
+    border: 0;
     -webkit-clip-path: inset(100%);
             clip-path: inset(100%);
     clip: rect(0 0 0);
     height: 1px;
     margin: -1px;
-    border: 0;
     overflow: hidden;
     padding: 0;
     position: absolute;
@@ -545,13 +548,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   [class*="padding-top-one-twenty"] {
     padding-top: 120px;
   }
+  [class*="padding-forty"] {
+    padding: 40px;
+  }
   [class*="padding-top-bottom-one-twenty"] {
     padding: 120px 0;
   }
   [class*="position-relative"] {
     position: relative;
   }
-  [class*="flex-row"] {
+  [class*="flex-row"],
+  .main__section-flex-quadrant {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -566,6 +573,26 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  [class*="main__section-flex-row-reverse"] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  main {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 90%;
   }
 }
 
@@ -730,16 +757,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 10px 20px;
   }
   header.body__heading-background-image-home {
-    height: 50vh;
     background-image: url("../assets/home-header.jpg");
+    height: 50vh;
+    max-height: 380px;
   }
   header.body__heading-background-image-blog {
-    height: 50vh;
     background-image: url("../assets/blog-header.jpg");
+    height: 40vh;
+    max-height: 200px;
   }
   header.body__heading-background-image-contact {
-    height: 50vh;
     background-image: url("../assets/contact-header.jpg");
+    height: 40vh;
+    max-height: 200px;
   }
   header h1 {
     width: 125px;
@@ -760,6 +790,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  header nav ul {
+    text-align: right;
   }
   header .header__anchor-current {
     background: #4C0341;
@@ -879,28 +912,44 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   section .fas {
     border-radius: 50%;
     display: inline-block;
-    height: 30px;
+    height: 25px;
     position: absolute;
-    width: 30px;
+    width: 25px;
   }
   section .fas::before {
-    left: 6px;
+    font-size: 0.74rem;
     position: relative;
-    top: 8px;
+    top: 1px;
+  }
+  section .fa-location-arrow::before {
+    left: 4px;
+  }
+  section .fa-users::before {
+    left: 3px;
+  }
+  section .fa-file::before {
+    left: 7px;
+  }
+  section .fa-phone::before {
+    left: 5px;
   }
   .section__div-image-wrapper {
-    width: calc(50% - 20px);
+    width: 100%;
   }
   .section__div-image-wrapper .div__image-position-absolute-right {
-    top: 25%;
+    top: 15%;
     position: absolute;
     right: 0;
   }
+  .section__div-image-wrapper-width-forty-percent {
+    width: 40%;
+  }
   .div__image-width-half {
+    max-width: 350px;
     width: 50%;
   }
   .section__unordered-list-image-gallery-3 li {
-    width: calc(100% / 3);
+    width: calc((100% - 40px) / 3);
   }
   [class*="position-content"] {
     -webkit-box-align: center;
@@ -917,15 +966,45 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .div__image-transform-zero-negative-twenty {
-    -webkit-transform: translate(0, -20px);
-            transform: translate(0, -20px);
+  .div__image-transform-zero-negative-forty {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
   }
-  .div__image-transform-negative-twenty-zero {
-    -webkit-transform: translate(0, -20px);
-            transform: translate(0, -20px);
+  .div__image-transform-zero-twenty {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
   }
-  .section__div-position-right {
-    width: calc(50% - 40px);
+  [class*="align-items-flex-end"] {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  [class*="position-half"] {
+    padding: 20px 60px;
+    width: calc(40% - 60px);
+  }
+  .div__section-div-column-left,
+  .div__section-div-column-right {
+    margin-top: 20px;
+  }
+  .div__div-text-wrapper {
+    margin-left: 60px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .div__image-max-height {
+    max-height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main__section-flex-quadrant {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
