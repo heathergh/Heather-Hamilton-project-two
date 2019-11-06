@@ -809,6 +809,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   header.body__heading-background-image-home {
     height: 80vh;
   }
+  header.body__heading-background-image-home h1 {
+    font-size: 2rem;
+    line-height: 1rem;
+  }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -819,8 +823,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   header h1 {
     padding-top: 50px;
-    font-size: 2rem;
-    line-height: 1rem;
     width: 15%;
   }
   header h5 {
@@ -833,6 +835,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   header .header__anchor-current {
     line-height: normal;
     padding: 2px 8px;
+  }
+  .contact h1 {
+    width: 84%;
   }
 }
 
@@ -870,18 +875,78 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media (min-width: 768px) {
-  form {
-    -ms-flex-line-pack: center;
-        align-content: center;
+  .contact address {
+    text-align: left;
+  }
+  .contact section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  }
+  .contact section .section__div-form-wrapper {
+    margin-top: -75px;
+    text-align: center;
+  }
+  .contact section .section__div-form-wrapper form {
+    padding: 20px 0 40px;
+    width: 100%;
+    max-width: 460px;
+  }
+  .contact section .section__div-form-wrapper form input[type="text"],
+  .contact section .section__div-form-wrapper form input[type="email"] {
+    padding: 15px 3px;
+    width: 35%;
+    border-bottom-width: 1px;
+  }
+  .contact section .section__div-form-wrapper form input[type="text"]::-webkit-input-placeholder,
+  .contact section .section__div-form-wrapper form input[type="email"]::-webkit-input-placeholder {
+    color: #0D0D0D;
+    font-size: 0.75rem;
+  }
+  .contact section .section__div-form-wrapper form input[type="text"]:-ms-input-placeholder,
+  .contact section .section__div-form-wrapper form input[type="email"]:-ms-input-placeholder {
+    color: #0D0D0D;
+    font-size: 0.75rem;
+  }
+  .contact section .section__div-form-wrapper form input[type="text"]::-ms-input-placeholder,
+  .contact section .section__div-form-wrapper form input[type="email"]::-ms-input-placeholder {
+    color: #0D0D0D;
+    font-size: 0.75rem;
+  }
+  .contact section .section__div-form-wrapper form input[type="text"]::placeholder,
+  .contact section .section__div-form-wrapper form input[type="email"]::placeholder {
+    color: #0D0D0D;
+    font-size: 0.75rem;
+  }
+  .contact section .section__div-form-wrapper form input[type="email"] {
+    margin-left: 20px;
+  }
+  .contact section .section__div-form-wrapper form textarea {
+    height: 300px;
+    margin: 30px 0;
+    padding: 20px;
+    width: 70%;
+  }
+  .contact section .section__div-form-wrapper form textarea::-webkit-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .contact section .section__div-form-wrapper form textarea:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .contact section .section__div-form-wrapper form textarea::-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .contact section .section__div-form-wrapper form textarea::placeholder {
+    font-size: 0.75rem;
+  }
+  .contact section .section__div-form-wrapper form button {
+    width: 80%;
+  }
+  .contact .nav__unordered-list-social-media-link-wrapper {
+    width: 20%;
   }
 }
 
@@ -909,6 +974,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media (min-width: 768px) {
+  h2 {
+    padding-top: 120px;
+  }
   section .fas {
     border-radius: 50%;
     display: inline-block;
@@ -933,13 +1001,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   section .fa-phone::before {
     left: 5px;
   }
-  .section__div-image-wrapper {
-    width: 100%;
+  section:nth-of-type(1) {
+    padding-bottom: 120px;
   }
-  .section__div-image-wrapper .div__image-position-absolute-right {
-    top: 15%;
+  .section__div-image-wrapper {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     position: absolute;
-    right: 0;
+  }
+  .section__div-image-wrapper .div__image-position-right {
+    top: -250px;
+    position: relative;
+    right: -20px;
+    width: 100%;
   }
   .section__div-image-wrapper-width-forty-percent {
     width: 40%;

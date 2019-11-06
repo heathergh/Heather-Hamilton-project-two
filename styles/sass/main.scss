@@ -22,6 +22,9 @@
 }
 
 @include mq-tablet {
+    h2 {
+        padding-top: 120px;
+    }
     section {
         .fas {
             border-radius: 50%;
@@ -56,12 +59,18 @@
             }
         }
     }
+    section:nth-of-type(1) {
+        padding-bottom: 120px;
+    } 
     .section__div-image-wrapper {
-        width: 100%;
-        .div__image-position-absolute-right {
-            top: 15%;
-            position: absolute;
-            right: 0;
+        align-self: flex-end;
+        position: absolute;
+        // width: 100%;
+        .div__image-position-right {
+            top: -250px;
+            position: relative;
+            right: -20px;
+            width: 100%;
         }
     }
     .section__div-image-wrapper-width-forty-percent {

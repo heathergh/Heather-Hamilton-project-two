@@ -55,6 +55,10 @@
         padding: 20px 40px;
         &.body__heading-background-image-home {
             height: 80vh;
+            h1 {
+                font-size: 2rem;
+                line-height: 1rem;
+            }
         }
         ul {
             display: flex;
@@ -64,8 +68,6 @@
         }
         h1 {
             padding-top: 50px;
-            font-size: 2rem;
-            line-height: 1rem;
             width: 15%;
         }
         h5 {
@@ -78,6 +80,11 @@
         .header__anchor-current {
             line-height: normal;
             padding: 2px 8px;
+        }
+    }
+    .contact {
+        h1 {
+            width: 84%;
         }
     }
 }
