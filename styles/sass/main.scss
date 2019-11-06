@@ -1,56 +1,27 @@
 @import 'normalize';
+@import 'reset';
 @import 'global'; 
 @import 'header';
 @import 'contact';
 @import 'blog';
 
 @include mq-mobile {
-    // .body__main-position-content-center {
-    //     section, div {
-    //         align-items: center;
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: center;
-    //     }
-    // }
-    [class*="position-content-center"] {
-        // section, div {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        // }
-    }
+    h4 {
+        font-size: 1.5rem;
+    }  
     section {
         .fas {
             display: none;
         }
     }
-    h4 {
-        font-size: 1.5rem;
-    }  
     .section__unordered-list-image-gallery-3 {
         li {
             padding: 10px 0;
         }
     }
-    footer {
-        align-items: center;
-        display: flex;
-        height: 50px;
-        justify-content: center;
-        p {
-            margin: 0;
-        }
-    }
 }
 
 @include mq-tablet {
-    .section__unordered-list-image-gallery-3 {
-        li {
-            width: calc(100% / 3);
-        }
-    }
     section {
         .fas {
             border-radius: 50%;
@@ -65,6 +36,38 @@
             top: 8px;
         }
     }
+    .section__div-image-wrapper {
+        width: calc(50% - 20px);
+        .div__image-position-absolute-right {
+            top: 25%;
+            position: absolute;
+            right: 0;
+        }
+    }
+    .div__image-width-half {
+        width: 50%;
+    }
+    .section__unordered-list-image-gallery-3 {
+        li {
+            width: calc(100% / 3);
+        }
+    }
+    [class*="position-content"] {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .div__image-transform-zero-negative-twenty {
+        transform: translate(0, -20px);
+    }
+    .div__image-transform-negative-twenty-zero {
+        transform: translate(0, -20px);
+    }
+    .section__div-position-right {
+        width: calc(50% - 40px);
+    }
+
 }
 
 @include mq-desktop {}

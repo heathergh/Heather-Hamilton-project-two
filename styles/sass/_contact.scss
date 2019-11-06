@@ -17,36 +17,16 @@
         }
     }
     .section__div-form-wrapper > form, .form--div-input-wrapper {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+        text-align: center;
     }
-    .section__div-form-wrapper {
-        input, textarea {
-            margin: 5px 0;
-        }
-        input {
-            border-left: none;
-            border-right: none;;
-            border-top: none;
-        }
-        button[type="submit"] {
-            border: none;
-            box-shadow: none;
-            width: 212px;
-        }
-    }
-    .section__div-form-wrapper > form {
-        padding: 20px 0;
-    }
-    section > div {
+
+    .section__div-margin-top-bottom-twenty {
         margin: 20px 0;
     }
     .section__div-text-wrapper {
         address {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
+            font-style: normal;
+            text-align: center;
             p {
                 white-space: nowrap;
             }

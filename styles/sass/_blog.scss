@@ -4,7 +4,10 @@
     ul.div__unordered-list-initial-styling {
         list-style: disc;
         margin: 20px 0;
-        padding-left: 40px;
+        padding-left: 20px;
+    }
+    .section__div-form-wrapper {
+        text-align: center;
     }
 }
 @include mq-tablet {
