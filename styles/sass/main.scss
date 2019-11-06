@@ -60,12 +60,11 @@
         }
     }
     section:nth-of-type(1) {
-        padding-bottom: 120px;
+        padding: 0 40px 120px
     } 
     .section__div-image-wrapper {
         align-self: flex-end;
         position: absolute;
-        // width: 100%;
         .div__image-position-right {
             top: -250px;
             position: relative;
